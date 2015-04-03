@@ -43,3 +43,10 @@ group :development, :test do
   gem 'spring'
 end
 
+group :production do
+  # PG allos rails to talk to postgres
+  gem 'pg', '0.17.1'
+  # rails_12factor is used by Heroku to serve static assets such as stylesheets and images
+  gem 'rails_12factor', '0.0.2'
+end
+
